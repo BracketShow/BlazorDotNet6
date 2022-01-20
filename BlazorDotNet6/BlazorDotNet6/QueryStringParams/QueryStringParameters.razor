@@ -1,0 +1,17 @@
+﻿@page "/QueryStringParameters"
+
+<PageTitle>QueryStringParameters</PageTitle>
+
+<h1>QueryStringParameters</h1>
+
+<label>Prénom: @FirstName</label>
+<br/>
+
+<label>Nom: @LastName</label>
+
+<p>
+	Change name: <input @bind-value="newName" /> <button class="btn btn-primary" @onclick="RedirectWithNewName">Change name</button>
+</p>
+<p>
+	<button class="btn btn-primary" @onclick="RemoveNameFromQuerySTring">Remove query string parameter</button>
+</p>

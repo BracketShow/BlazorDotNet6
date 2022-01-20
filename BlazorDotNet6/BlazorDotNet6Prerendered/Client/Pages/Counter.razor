@@ -1,0 +1,14 @@
+﻿@page "/counter"
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<ErrorBoundary>
+    <ChildContent>
+        <CounterComponent />
+    </ChildContent>
+    <ErrorContent>
+        <p>Please refresh the page, the count went over limit!</p>
+    </ErrorContent>
+</ErrorBoundary>
